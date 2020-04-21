@@ -1,0 +1,203 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body oncontextmenu="return false">
+<center>
+	<div id="logIn"oncontextmenu="return false">
+		<h1>Please enter the login code</h1>
+		<input type="text" id="code" style="width: 30vw">
+		<br>
+		<button onclick="logIn()" id="logInBtn">Log In</button>
+	</div>
+</center>
+<div id="logged" style="display: none;">
+
+	<button id="myBtn" class="button">SET VALUES</button>
+	<br>
+	<button id="btn" onclick="clearMarbles()">CLEAR MARBLES</button>
+
+	<div id="myModal" class="modal">
+
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <center>
+	    	<h1>Set Values</h1>
+	    	<br>
+		    <table style="border-radius: 10px;">
+		    	<tr>
+		    		<th>
+		    			<h3> Marbles </h3>
+		    		</th>
+		    		<th>
+		    			<h4> Blue Marble </h4>
+		    			<img id="img0">
+
+		    			
+		    		</th>
+		    		<th>
+		    			<h4> Green Marble </h4>
+		    			<img id="img1">
+
+		    			
+		    		</th>
+		    		<th>
+		    			<h4> Split Marble </h4>
+		    			<img id="img2">
+
+
+		    		</th>
+		    		<th>
+		    			<h4> Pearl Marble </h4>
+		    			<img id="img3">
+
+		    			
+		    		</th>
+		    		<th>
+		    			<h4> Orange Marble </h4>
+		    			<img id="img4">
+
+		    			
+		    		</th>
+		    		<th>
+		    			<h4> Red Marble </h4>
+		    			<img id="img5">
+
+		    			
+		    		</th>
+		    		<th>
+		    			<h4> Black Marble </h4>
+		    			<img id="img6">
+
+		    			
+		    		</th>
+		    	</tr>
+		    	<tr>
+		    		<th>
+		    			<h3> Number of Marbles </h3>
+		    		</th>
+		    		<th>
+
+		    			<input type ="text" size = "4" id="1">
+		    			
+		    		</th>
+		    		<th>
+
+		    			<input type ="text" size = "4" id="2">
+		    			
+		    		</th>
+		    		<th>
+
+		    			<input type ="text" size = "4" id="3">
+
+		    		</th>
+		    		<th>
+
+		    			<input type ="text" size = "4" id="4">
+		    			
+		    		</th>
+		    		<th>
+
+		    			<input type ="text" size = "4" id="5">
+		    			
+		    		</th>
+		    		<th>
+
+		    			<input type ="text" size = "4" id="6">
+		    			
+		    		</th>
+		    		<th>
+
+		    			<input type ="text" size = "4" id="7">
+		    			
+		    		</th>
+		    	</tr>
+		    	<tr>
+		    		<th>
+		    			<h3> R-Values for Each Marble Type </h3>
+		    		</th>
+		    		<th>
+		    			<input type ="text" size = "4" id="0r">
+		    		</th>
+		    		<th>
+		    			<input type ="text" size = "4" id="1r">
+		    		</th>
+		    		<th>
+		    			<input type ="text" size = "4" id="2r">
+		    		</th>
+		    		<th>
+		    			<input type ="text" size = "4" id="3r">
+		    		</th>
+		    		<th>
+		    			<input type ="text" size = "4" id="4r">
+		    		</th>
+		    		<th>
+		    			<input type ="text" size = "4" id="5r">
+		    		</th>
+		    		<th>
+		    			<input type ="text" size = "4" id="6r">
+		    		</th>
+		    	</tr>
+		    </table>
+		    <br>
+
+		    <button id = "set" class = "button" onclick="getInputs()">Set!</button>
+		    
+		    <p id="why"></p>
+
+		</center>
+	  </div>
+
+	</div>
+
+	<center>
+		<img src="vantharplogo.png" style="padding: 2px" width = 25% height = auto>
+		<div>
+			<h1 style="font-size: 4vh; color:#1c496e"> THE MARBLE GAME </h1>
+		</div>
+	</center>
+
+	<br>
+
+	<table style="width:100%; border: 3px solid #384d87; border-radius: 8px; background-color: #7ea8cc;" >
+		<tr>
+			<th style="width: 35%">
+				<center>
+
+					<div style="padding-top: 10px ">
+						<button onclick="run()" id="btn">TAKE MARBLE</button>
+					</div>
+
+					<h1 id="marble"></h1>
+
+					<div style="padding-top: 15vh">
+						<img id="marbleImg" src="blank.png" width=15% height=15%>
+					</div>	
+
+					<div>
+						<img src="bagOfMarbles.png"  width=40% height=auto>
+					</div>
+
+				</center>
+			</th>
+
+			<th>
+				<center>
+					<h1 id = "net"></h1>
+					<div id="indexx">
+
+					</div>
+				</center>
+			</th>
+		</tr>
+	</table>
+</div>
+<script src="js/logAuth.js"></script>
+<script src="js/setVal.js"></script>
+<script src="js/runFunctions.js"></script>
+</body>
+</html>
