@@ -1,7 +1,7 @@
 	   var runAmt = 1;
   	var marbClass = [];
-  	var marbImgs = ["MarbleOne.png", "MarbleTwo.png",
-  	"MarbleThree.png", "MarbleFour.png", "MarbleFive.png", "MarbleSix.png", "MarbleSeven.png"];
+  	var marbImgs = ["img/MarbleOne.png", "img/MarbleTwo.png",
+  	"img/MarbleThree.png", "img/MarbleFour.png", "img/MarbleFive.png", "img/MarbleSix.png", "img/MarbleSeven.png"];
   	var marb = [-1];
   	//this is the array containing all the marble picks
   	function run() {
@@ -95,6 +95,6 @@
       runAmt = 1;
       document.getElementById("set").disabled = false;
       document.getElementById("why").innerHTML = "";
-      document.getElementById("marbleImg").setAttribute("src", "blank.png");
+      document.getElementById("marbleImg").setAttribute("src", "img/blank.png");
       document.getElementById("marble").innerHTML = " "
     }
